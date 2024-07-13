@@ -1,0 +1,5 @@
+# Test playbook for webserver role
+---
+- hosts: localhost
+  roles:
+    - webserver

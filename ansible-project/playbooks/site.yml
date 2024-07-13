@@ -1,0 +1,4 @@
+# Site playbook
+---
+- include: webservers.yml
+- include: dbservers.yml

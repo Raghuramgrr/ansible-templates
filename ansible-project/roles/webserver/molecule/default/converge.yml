@@ -1,0 +1,6 @@
+# Molecule converge playbook
+---
+- name: Converge
+  hosts: all
+  roles:
+    - role: webserver

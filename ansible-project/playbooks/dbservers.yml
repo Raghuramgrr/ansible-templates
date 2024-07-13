@@ -1,0 +1,5 @@
+# DBservers playbook
+---
+- hosts: dbservers
+  roles:
+    - dbserver

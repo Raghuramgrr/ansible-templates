@@ -1,0 +1,14 @@
+# Molecule verify playbook
+---
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Check if file exists
+      stat:
+        path: /path/to/file
+      register: result
+
+    - name: Fail if file does not exist
+      fail:
+        msg: "File does not exist"
+      when: not result.stat.exists

@@ -1,0 +1,5 @@
+# Webservers playbook
+---
+- hosts: webservers
+  roles:
+    - webserver

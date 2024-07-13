@@ -1,0 +1,5 @@
+# Test playbook for common role
+---
+- hosts: localhost
+  roles:
+    - common
